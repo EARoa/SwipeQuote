@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class PodcastListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var items = ["1","2"]
+    var labels = [String: UILabel]()
+    var strings = [String]()
+    var objects = [[String: String]]()
     
     @IBOutlet var tableView: UITableView?
     
@@ -18,6 +22,21 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
 
         var nib = UINib(nibName: "BasicCell", bundle: nil)
         tableView?.registerNib(nib, forCellReuseIdentifier: "BasicCellIdentifier")
+        
+        // We should put this part into DataManager.swift
+        var urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=10"
+        if let url = NSURL(string: urlString) {
+            if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
+                let json = JSON(data: data)
+                
+                if json["metadata"]["responseInfo"]["status"].intValue == 200 {
+                    // we're OK to parse!
+                    parseJSON(json)
+                }
+            }
+        }
+        
+        tableView!.reloadData()
         
         self.configureTableView()
     }
@@ -28,7 +47,7 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return objects.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -36,8 +55,8 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
         let cell = tableView.dequeueReusableCellWithIdentifier("BasicCellIdentifier") as! BasicCell
         
         //var cell = UITableViewCell()
-        cell.titleLabel!.text = "hello"
-        cell.subtitleLabel!.text = "hello"
+        cell.titleLabel!.text = objects[indexPath.row]["title"]
+        cell.subtitleLabel!.text = objects[indexPath.row].description
         return cell
     }
     
@@ -49,6 +68,18 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
     func configureTableView() {
         tableView!.rowHeight = UITableViewAutomaticDimension
         tableView!.estimatedRowHeight = 160.0
+    }
+
+    func parseJSON(json: JSON) {
+        for result in json["results"].arrayValue {
+            let title = result["title"].stringValue
+            let body = result["body"].stringValue
+            let sigs = result["signatureCount"].stringValue
+            let obj = ["title": title, "body": body, "sigs": sigs]
+            objects.append(obj)
+        }
+        
+        tableView!.reloadData()
     }
     
     /*
