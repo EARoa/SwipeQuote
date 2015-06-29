@@ -24,16 +24,23 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
         tableView?.registerNib(nib, forCellReuseIdentifier: "BasicCellIdentifier")
         
         // We should put this part into DataManager.swift
-        var urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=10"
+        // http://www.hackingwithswift.com/read/7/3/parsing-json-nsdata-and-swiftyjson
+        
+        var urlString = "https://spreadsheets.google.com/feeds/list/1w3lHCYJ_NrBLlFkoLYqmUZKfaoIMBJ0DUjC74IBWqlk/od6/public/values?alt=json"
+        
         if let url = NSURL(string: urlString) {
+            
             if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
+                println(data)
                 let json = JSON(data: data)
-                
-                if json["metadata"]["responseInfo"]["status"].intValue == 200 {
-                    // we're OK to parse!
-                    parseJSON(json)
-                }
+                parseJSON(json)
             }
+            else{
+                println("something wrong of the json data")
+            }
+        }
+        else{
+            println("something wrong of the url")
         }
         
         tableView!.reloadData()
@@ -56,7 +63,7 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
         
         //var cell = UITableViewCell()
         cell.titleLabel!.text = objects[indexPath.row]["title"]
-        cell.subtitleLabel!.text = objects[indexPath.row].description
+        cell.subtitleLabel!.text = "hello"
         return cell
     }
     
@@ -71,11 +78,11 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
     }
 
     func parseJSON(json: JSON) {
-        for result in json["results"].arrayValue {
-            let title = result["title"].stringValue
-            let body = result["body"].stringValue
-            let sigs = result["signatureCount"].stringValue
-            let obj = ["title": title, "body": body, "sigs": sigs]
+        for result in json["feed"]["entry"].arrayValue {
+            let title = result["gsx$name"]["$t"].stringValue
+            let created_at = result["gsx$showcreatedat"]["$t"].stringValue
+            let download = result["gsx$sum"]["$t"].stringValue
+            let obj = ["title": title, "created_at": created_at, "download": download]
             objects.append(obj)
         }
         
