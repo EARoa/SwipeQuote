@@ -18,6 +18,8 @@
 		E546241A1B40DFDB00664E0B /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54624181B40DFDB00664E0B /* BasicCell.swift */; };
 		E546241B1B40DFDB00664E0B /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54624191B40DFDB00664E0B /* BasicCell.xib */; };
 		E546241D1B40E52900664E0B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546241C1B40E52900664E0B /* DataManager.swift */; };
+		E54624201B410F6900664E0B /* PodcastDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546241E1B410F6900664E0B /* PodcastDashViewController.swift */; };
+		E54624211B410F6900664E0B /* PodcastDashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E546241F1B410F6900664E0B /* PodcastDashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E54624181B40DFDB00664E0B /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		E54624191B40DFDB00664E0B /* BasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 		E546241C1B40E52900664E0B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E546241E1B410F6900664E0B /* PodcastDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastDashViewController.swift; sourceTree = "<group>"; };
+		E546241F1B410F6900664E0B /* PodcastDashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastDashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				E54623F01B40D4FD00664E0B /* ViewController.swift */,
 				E54623F21B40D4FD00664E0B /* Main.storyboard */,
 				E54624161B40D99F00664E0B /* PodcastListViewController.swift */,
+				E546241E1B410F6900664E0B /* PodcastDashViewController.swift */,
+				E546241F1B410F6900664E0B /* PodcastDashViewController.xib */,
 				E546241C1B40E52900664E0B /* DataManager.swift */,
 				E54624181B40DFDB00664E0B /* BasicCell.swift */,
 				E54624191B40DFDB00664E0B /* BasicCell.xib */,
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E546241B1B40DFDB00664E0B /* BasicCell.xib in Resources */,
+				E54624211B410F6900664E0B /* PodcastDashViewController.xib in Resources */,
 				E54623F41B40D4FD00664E0B /* Main.storyboard in Resources */,
 				E54623F91B40D4FD00664E0B /* LaunchScreen.xib in Resources */,
 				E54623F61B40D4FD00664E0B /* Images.xcassets in Resources */,
@@ -307,6 +314,7 @@
 				E54623F11B40D4FD00664E0B /* ViewController.swift in Sources */,
 				E54624171B40D99F00664E0B /* PodcastListViewController.swift in Sources */,
 				E54623EF1B40D4FD00664E0B /* AppDelegate.swift in Sources */,
+				E54624201B410F6900664E0B /* PodcastDashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

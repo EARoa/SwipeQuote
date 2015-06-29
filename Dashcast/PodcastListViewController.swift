@@ -31,7 +31,7 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
         if let url = NSURL(string: urlString) {
             
             if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
-                println(data)
+                
                 let json = JSON(data: data)
                 parseJSON(json)
             }
@@ -63,7 +63,7 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
         
         //var cell = UITableViewCell()
         cell.titleLabel!.text = objects[indexPath.row]["title"]
-        cell.subtitleLabel!.text = "hello"
+        cell.subtitleLabel!.text = objects[indexPath.row]["download"]
         return cell
     }
     
@@ -71,6 +71,12 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
         return 1
     }
     
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var podcastDashViewController = PodcastDashViewController(nibName: "PodcastDashViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(podcastDashViewController, animated: true)
+    }
     
     func configureTableView() {
         tableView!.rowHeight = UITableViewAutomaticDimension
