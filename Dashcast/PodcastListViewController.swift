@@ -16,7 +16,10 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        var nib = UINib(nibName: "BasicCell", bundle: nil)
+        tableView?.registerNib(nib, forCellReuseIdentifier: "BasicCellIdentifier")
+        
+        self.configureTableView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,13 +32,23 @@ class PodcastListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
-        cell.textLabel!.text = "hello"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("BasicCellIdentifier") as! BasicCell
+        
+        //var cell = UITableViewCell()
+        cell.titleLabel!.text = "hello"
+        cell.subtitleLabel!.text = "hello"
         return cell
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    
+    func configureTableView() {
+        tableView!.rowHeight = UITableViewAutomaticDimension
+        tableView!.estimatedRowHeight = 160.0
     }
     
     /*

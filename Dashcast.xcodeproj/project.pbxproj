@@ -15,6 +15,8 @@
 		E54623F91B40D4FD00664E0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54623F71B40D4FD00664E0B /* LaunchScreen.xib */; };
 		E54624051B40D4FD00664E0B /* DashcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54624041B40D4FD00664E0B /* DashcastTests.swift */; };
 		E54624171B40D99F00664E0B /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54624161B40D99F00664E0B /* PodcastListViewController.swift */; };
+		E546241A1B40DFDB00664E0B /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54624181B40DFDB00664E0B /* BasicCell.swift */; };
+		E546241B1B40DFDB00664E0B /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54624191B40DFDB00664E0B /* BasicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		E54624041B40D4FD00664E0B /* DashcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashcastTests.swift; sourceTree = "<group>"; };
 		E546240E1B40D61000664E0B /* Dashcast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dashcast-Bridging-Header.h"; sourceTree = "<group>"; };
 		E54624161B40D99F00664E0B /* PodcastListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
+		E54624181B40DFDB00664E0B /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		E54624191B40DFDB00664E0B /* BasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				E54623F01B40D4FD00664E0B /* ViewController.swift */,
 				E54623F21B40D4FD00664E0B /* Main.storyboard */,
 				E54624161B40D99F00664E0B /* PodcastListViewController.swift */,
+				E54624181B40DFDB00664E0B /* BasicCell.swift */,
+				E54624191B40DFDB00664E0B /* BasicCell.xib */,
 				E54623F51B40D4FD00664E0B /* Images.xcassets */,
 				E54623F71B40D4FD00664E0B /* LaunchScreen.xib */,
 				E54623EC1B40D4FD00664E0B /* Supporting Files */,
@@ -224,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E546241B1B40DFDB00664E0B /* BasicCell.xib in Resources */,
 				E54623F41B40D4FD00664E0B /* Main.storyboard in Resources */,
 				E54623F91B40D4FD00664E0B /* LaunchScreen.xib in Resources */,
 				E54623F61B40D4FD00664E0B /* Images.xcassets in Resources */,
@@ -292,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E546241A1B40DFDB00664E0B /* BasicCell.swift in Sources */,
 				E54623F11B40D4FD00664E0B /* ViewController.swift in Sources */,
 				E54624171B40D99F00664E0B /* PodcastListViewController.swift in Sources */,
 				E54623EF1B40D4FD00664E0B /* AppDelegate.swift in Sources */,
