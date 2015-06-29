@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Dashcast-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Dashcast-FLKAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Dashcast-ORStackView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Dashcast-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Dashcast.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>02778015726FCA7C3B0AE06F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>12C08B7902F31BA81E038BD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19EE0DB0919C0A8027DD467A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A058224185E0B0A93B0BA0CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA87F3D266E5D88D0B46A6EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
