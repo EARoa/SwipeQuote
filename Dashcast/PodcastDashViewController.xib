@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PodcastDashViewController" customModule="Dashcast" customModuleProvider="target">
             <connections>
-                <outlet property="barChartView" destination="3ww-Y5-Zg9" id="CR7-YA-frf"/>
+                <outlet property="lineChartView" destination="3ww-Y5-Zg9" id="QRH-fs-dv4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,10 +19,10 @@
                     <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="300" id="a6O-eD-m5z"/>
+                        <constraint firstAttribute="height" constant="300" id="Bk6-RV-Yd1"/>
                     </constraints>
                 </tableView>
-                <view contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-Y5-Zg9" customClass="BarChartView" customModule="Charts">
+                <view contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-Y5-Zg9" customClass="LineChartView" customModule="Charts">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>

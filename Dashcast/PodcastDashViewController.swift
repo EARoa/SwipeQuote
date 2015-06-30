@@ -12,6 +12,8 @@ import Charts
 class PodcastDashViewController: UIViewController {
     
     @IBOutlet var barChartView: BarChartView!
+    @IBOutlet var lineChartView: LineChartView!
+    
     var months: [String]!
     
     @IBOutlet var chartView: UIView!
@@ -34,7 +36,7 @@ class PodcastDashViewController: UIViewController {
     }
 
     func setChart(dataPoints: [String], values: [Double]) {
-        barChartView.noDataText = "You need to provide data for the chart."
+        lineChartView.noDataText = "You need to provide data for the chart."
         var dataEntries: [BarChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
@@ -42,9 +44,12 @@ class PodcastDashViewController: UIViewController {
             dataEntries.append(dataEntry)
         }
         
-        let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
-        let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
-        barChartView.data = chartData
+        let lineDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
+
+        let chartData = LineChartData(xVals: months, dataSet: lineDataSet)
+
+        lineChartView.data = chartData
+        lineChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
         
     }
 
