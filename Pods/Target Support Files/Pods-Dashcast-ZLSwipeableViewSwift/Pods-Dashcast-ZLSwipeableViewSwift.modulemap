@@ -1,0 +1,6 @@
+framework module ZLSwipeableViewSwift {
+  umbrella header "Pods-Dashcast-ZLSwipeableViewSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

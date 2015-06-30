@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 4
 
+// Cartography
+#define COCOAPODS_POD_AVAILABLE_Cartography
+#define COCOAPODS_VERSION_MAJOR_Cartography 0
+#define COCOAPODS_VERSION_MINOR_Cartography 5
+#define COCOAPODS_VERSION_PATCH_Cartography 0
+
 // FLKAutoLayout
 #define COCOAPODS_POD_AVAILABLE_FLKAutoLayout
 #define COCOAPODS_VERSION_MAJOR_FLKAutoLayout 0
@@ -60,9 +66,33 @@
 #define COCOAPODS_VERSION_MINOR_ORStackView 0
 #define COCOAPODS_VERSION_PATCH_ORStackView 0
 
+// ReactiveUI
+#define COCOAPODS_POD_AVAILABLE_ReactiveUI
+#define COCOAPODS_VERSION_MAJOR_ReactiveUI 0
+#define COCOAPODS_VERSION_MINOR_ReactiveUI 0
+#define COCOAPODS_VERSION_PATCH_ReactiveUI 2
+
 // SwiftyJSON
 #define COCOAPODS_POD_AVAILABLE_SwiftyJSON
 #define COCOAPODS_VERSION_MAJOR_SwiftyJSON 2
 #define COCOAPODS_VERSION_MINOR_SwiftyJSON 2
 #define COCOAPODS_VERSION_PATCH_SwiftyJSON 0
+
+// UIColor+FlatColors
+#define COCOAPODS_POD_AVAILABLE_UIColor_FlatColors
+#define COCOAPODS_VERSION_MAJOR_UIColor_FlatColors 0
+#define COCOAPODS_VERSION_MINOR_UIColor_FlatColors 0
+#define COCOAPODS_VERSION_PATCH_UIColor_FlatColors 2
+
+// ZLSwipeableViewSwift
+#define COCOAPODS_POD_AVAILABLE_ZLSwipeableViewSwift
+#define COCOAPODS_VERSION_MAJOR_ZLSwipeableViewSwift 0
+#define COCOAPODS_VERSION_MINOR_ZLSwipeableViewSwift 0
+#define COCOAPODS_VERSION_PATCH_ZLSwipeableViewSwift 2
+
+// performSelector-swift
+#define COCOAPODS_POD_AVAILABLE_performSelector_swift
+#define COCOAPODS_VERSION_MAJOR_performSelector_swift 0
+#define COCOAPODS_VERSION_MINOR_performSelector_swift 1
+#define COCOAPODS_VERSION_PATCH_performSelector_swift 0
 
