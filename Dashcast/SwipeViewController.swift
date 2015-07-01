@@ -54,9 +54,12 @@ class SwipeViewController: UIViewController {
             if self.colorIndex < self.colors.count {
                 var cardView = CardView(frame: self.swipeableView.bounds)
                 //cardView.backgroundColor =  self.colorForName(self.colors[self.colorIndex])
+                cardView.backgroundColor =  UIColor.randomFlatColor()
                 
-                cardView.backgroundColor =  UIColor.redColor()
+                //cardView.backgroundColor =  UIColor.redColor()
+                
                 cardView.textLabel.text = "Hello world"
+                cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
                 
                 self.colorIndex++
                 
@@ -98,13 +101,4 @@ class SwipeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func colorForName(name: String) -> UIColor {               
-        let sanitizedName = name.stringByReplacingOccurrencesOfString(" ", withString: "")
-        let selector = "flat\(sanitizedName)Color"
-        println(selector)
-        return UIColor.swift_performSelector(Selector(selector), withObject: nil) as! UIColor
-        
-    }
-    
 }

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C5FDFD0EC44E132E9B1B440"
+               BlueprintIdentifier = "DD2360AC4549A63CC883306B"
                BuildableName = "ReactiveUI.framework"
                BlueprintName = "Pods-Dashcast-ReactiveUI"
                ReferencedContainer = "container:Pods.xcodeproj">

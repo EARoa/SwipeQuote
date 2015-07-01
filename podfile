@@ -8,4 +8,5 @@ target 'Dashcast' do
   pod 'ReactiveUI'  
   pod 'ZLSwipeableViewSwift'
   pod 'UIColor+FlatColors'
+  pod 'ChameleonFramework'
 end

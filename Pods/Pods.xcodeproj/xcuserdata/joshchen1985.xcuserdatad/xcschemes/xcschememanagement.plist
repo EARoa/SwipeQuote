@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Dashcast-ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Dashcast-FLKAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>18A1A89D6B69D6B17AFC170C</key>
+		<key>015C3F3881FD8C7591308467</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>199E72E1683980D790009E92</key>
+		<key>3A08B1A0D413621066CF95A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A1D4B4DDDE32B1BEFA5CF0E</key>
+		<key>54446CA61FEACAFA1C8E4270</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>368EEDFB80F9AD2E6DD6766B</key>
+		<key>A100D3C9A3995901A2CBAF3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C5FDFD0EC44E132E9B1B440</key>
+		<key>A8236E743F4AA8B7E446B758</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FA22982B447B456F3842E5C</key>
+		<key>AF2A2293153DB9BAC344DC11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC819E1D7F36E872394D612E</key>
+		<key>DD2360AC4549A63CC883306B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDC5F9BCBAC189739ED8E6F3</key>
+		<key>ECBD2FF9419F077F6F5267DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDFAF565CD07F738F04868B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
