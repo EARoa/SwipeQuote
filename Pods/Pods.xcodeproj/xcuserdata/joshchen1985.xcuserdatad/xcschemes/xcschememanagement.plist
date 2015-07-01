@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Dashcast-Cartography.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Dashcast-FLKAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,11 +39,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Dashcast-performSelector-swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Dashcast.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,52 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FC3D4D4C32C3396281A2093</key>
+		<key>18A1A89D6B69D6B17AFC170C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43409AC8BF2496766CC5F4D9</key>
+		<key>199E72E1683980D790009E92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>466C182EFAE27CD4D615A8F8</key>
+		<key>2A1D4B4DDDE32B1BEFA5CF0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A2CA5D671756D30977B4CA2</key>
+		<key>368EEDFB80F9AD2E6DD6766B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>890E4D1EA75F64A91099DB36</key>
+		<key>7C5FDFD0EC44E132E9B1B440</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>939816EA9F17581FB64632EC</key>
+		<key>9FA22982B447B456F3842E5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3CDB7ADF23662AA059F0DA9</key>
+		<key>AC819E1D7F36E872394D612E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC5B1BC7876E8A82F1D86B70</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D06EFD87150BE8BD12E8DD98</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F36CE7FDF963E16FA76D698B</key>
+		<key>DDC5F9BCBAC189739ED8E6F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

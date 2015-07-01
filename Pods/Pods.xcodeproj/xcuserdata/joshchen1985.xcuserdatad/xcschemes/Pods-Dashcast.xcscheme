@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A2CA5D671756D30977B4CA2"
+               BlueprintIdentifier = "AC819E1D7F36E872394D612E"
                BuildableName = "Pods_Dashcast.framework"
                BlueprintName = "Pods-Dashcast"
                ReferencedContainer = "container:Pods.xcodeproj">

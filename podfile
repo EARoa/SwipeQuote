@@ -5,4 +5,7 @@ target 'Dashcast' do
   pod 'AFNetworking', '~> 2.5'
   pod 'ORStackView', '~> 2.0'
   pod 'SwiftyJSON', '~> 2.1'
+  pod 'ReactiveUI'  
+  pod 'ZLSwipeableViewSwift'
+  pod 'UIColor+FlatColors'
 end

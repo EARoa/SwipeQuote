@@ -17,19 +17,45 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKL-1v-oJ8">
-                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <rect key="frame" x="26" y="127" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fos-om-OnN"/>
+                                    <constraint firstAttribute="width" constant="200" id="LyI-zg-2qo"/>
+                                </constraints>
                                 <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Rb8-eZ-amE" kind="show" id="KyT-Ah-cce"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-KA-gMr">
+                                <rect key="frame" x="359" y="127" width="200" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q4O-NG-CZS"/>
+                                    <constraint firstAttribute="width" constant="200" id="zvL-uP-sPN"/>
+                                </constraints>
+                                <state key="normal" title="Swipe">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToSwipeViewButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xR4-CC-YGL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="NKL-1v-oJ8" secondAttribute="centerY" id="ekv-2X-J0Q"/>
-                            <constraint firstAttribute="centerX" secondItem="NKL-1v-oJ8" secondAttribute="centerX" id="ywI-BL-JDS"/>
+                            <constraint firstItem="NKL-1v-oJ8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="26" id="2PY-2M-Tpv"/>
+                            <constraint firstItem="U1n-KA-gMr" firstAttribute="leading" secondItem="NKL-1v-oJ8" secondAttribute="trailing" constant="133" id="8i1-kL-rJ1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="U1n-KA-gMr" secondAttribute="bottom" constant="443" id="C7T-w7-GIi"/>
+                            <constraint firstAttribute="trailing" secondItem="U1n-KA-gMr" secondAttribute="trailing" constant="41" id="IWb-mU-IsZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NKL-1v-oJ8" secondAttribute="bottom" constant="443" id="dfc-Bo-uaa"/>
+                            <constraint firstItem="NKL-1v-oJ8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="he4-u7-Qme"/>
+                            <constraint firstItem="U1n-KA-gMr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="xsr-is-60A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KJL-qA-QDv"/>
