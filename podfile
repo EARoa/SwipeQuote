@@ -9,4 +9,5 @@ target 'Dashcast' do
   pod 'ZLSwipeableViewSwift'
   pod 'UIColor+FlatColors'
   pod 'ChameleonFramework'
+  pod 'performSelector-swift'
 end

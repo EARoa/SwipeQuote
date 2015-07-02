@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14673749B9C0F90011EF47FB"
-               BuildableName = "ChameleonFramework.framework"
-               BlueprintName = "Pods-Dashcast-ChameleonFramework"
+               BlueprintIdentifier = "765A3C0D999D3A12A9AE78C7"
+               BuildableName = "performSelector_swift.framework"
+               BlueprintName = "Pods-Dashcast-performSelector-swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E54623E81B40D4FD00664E0B"
-               BuildableName = "Dashcast.app"
-               BlueprintName = "Dashcast"
-               ReferencedContainer = "container:Dashcast.xcodeproj">
+               BuildableName = "SwipeQuote.app"
+               BlueprintName = "SwipeQuote"
+               ReferencedContainer = "container:SwipeQuote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E54623FD1B40D4FD00664E0B"
-               BuildableName = "DashcastTests.xctest"
-               BlueprintName = "DashcastTests"
-               ReferencedContainer = "container:Dashcast.xcodeproj">
+               BuildableName = "SwipeQuoteTests.xctest"
+               BlueprintName = "SwipeQuoteTests"
+               ReferencedContainer = "container:SwipeQuote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E54623FD1B40D4FD00664E0B"
-               BuildableName = "DashcastTests.xctest"
-               BlueprintName = "DashcastTests"
-               ReferencedContainer = "container:Dashcast.xcodeproj">
+               BuildableName = "SwipeQuoteTests.xctest"
+               BlueprintName = "SwipeQuoteTests"
+               ReferencedContainer = "container:SwipeQuote.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E54623E81B40D4FD00664E0B"
-            BuildableName = "Dashcast.app"
-            BlueprintName = "Dashcast"
-            ReferencedContainer = "container:Dashcast.xcodeproj">
+            BuildableName = "SwipeQuote.app"
+            BlueprintName = "SwipeQuote"
+            ReferencedContainer = "container:SwipeQuote.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E54623E81B40D4FD00664E0B"
-            BuildableName = "Dashcast.app"
-            BlueprintName = "Dashcast"
-            ReferencedContainer = "container:Dashcast.xcodeproj">
+            BuildableName = "SwipeQuote.app"
+            BlueprintName = "SwipeQuote"
+            ReferencedContainer = "container:SwipeQuote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E54623E81B40D4FD00664E0B"
-            BuildableName = "Dashcast.app"
-            BlueprintName = "Dashcast"
-            ReferencedContainer = "container:Dashcast.xcodeproj">
+            BuildableName = "SwipeQuote.app"
+            BlueprintName = "SwipeQuote"
+            ReferencedContainer = "container:SwipeQuote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

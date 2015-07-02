@@ -24,6 +24,8 @@
 		E55FED011B42574E00AF2E88 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E55FECFF1B4256F500AF2E88 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E55FED0D1B43A4EA00AF2E88 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55FED0B1B43A4EA00AF2E88 /* SwipeViewController.swift */; };
 		E55FED101B43A99600AF2E88 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55FED0F1B43A99600AF2E88 /* CardView.swift */; };
+		E5A294761B44F7C8002D96B7 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A2946F1B44F784002D96B7 /* Cartography.framework */; };
+		E5A294771B44F7C8002D96B7 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5A2946F1B44F784002D96B7 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,41 @@
 			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
 			remoteInfo = Charts;
 		};
+		E5A2946E1B44F784002D96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A294671B44F784002D96B7 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54C96A11195063CD000CDD27;
+			remoteInfo = "Cartography-iOS";
+		};
+		E5A294701B44F784002D96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A294671B44F784002D96B7 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54C96A1C195063CD000CDD27;
+			remoteInfo = "Cartography-iOS-Tests";
+		};
+		E5A294721B44F784002D96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A294671B44F784002D96B7 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54F6A838195C20C100313D24;
+			remoteInfo = "Cartography-Mac";
+		};
+		E5A294741B44F784002D96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A294671B44F784002D96B7 /* Cartography.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54F6A842195C20C200313D24;
+			remoteInfo = "Cartography-Mac-Tests";
+		};
+		E5A294781B44F7C8002D96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5A294671B44F784002D96B7 /* Cartography.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C96A10195063CD000CDD27;
+			remoteInfo = "Cartography-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +95,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E55FED011B42574E00AF2E88 /* Charts.framework in Embed Frameworks */,
+				E5A294771B44F7C8002D96B7 /* Cartography.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,14 +106,14 @@
 		1C193A960F22CE39A7ACAFF1 /* Pods-Dashcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dashcast/Pods-Dashcast.release.xcconfig"; sourceTree = "<group>"; };
 		499CC3E8E61722B11770F1D1 /* Pods_Dashcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dashcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37DE3D5287E380D0E4AE3D7 /* Pods-Dashcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dashcast/Pods-Dashcast.debug.xcconfig"; sourceTree = "<group>"; };
-		E54623E91B40D4FD00664E0B /* Dashcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54623E91B40D4FD00664E0B /* SwipeQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54623ED1B40D4FD00664E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54623EE1B40D4FD00664E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E54623F01B40D4FD00664E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E54623F31B40D4FD00664E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E54623F51B40D4FD00664E0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E54623F81B40D4FD00664E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E54623FE1B40D4FD00664E0B /* DashcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashcastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54623FE1B40D4FD00664E0B /* SwipeQuoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeQuoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54624031B40D4FD00664E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54624041B40D4FD00664E0B /* DashcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashcastTests.swift; sourceTree = "<group>"; };
 		E546240E1B40D61000664E0B /* Dashcast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dashcast-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -88,6 +126,7 @@
 		E55FECFA1B4256F500AF2E88 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		E55FED0B1B43A4EA00AF2E88 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		E55FED0F1B43A99600AF2E88 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E5A294671B44F784002D96B7 /* Cartography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cartography.xcodeproj; path = "../../../Downloads/Cartography-master/Cartography.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +136,7 @@
 			files = (
 				CE161B8BCCAB75DCA7BB73BD /* Pods_Dashcast.framework in Frameworks */,
 				E55FED001B42574E00AF2E88 /* Charts.framework in Frameworks */,
+				E5A294761B44F7C8002D96B7 /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,14 +160,15 @@
 				E94E63201296092AB1BA051C /* Frameworks */,
 				E546240E1B40D61000664E0B /* Dashcast-Bridging-Header.h */,
 				E55FECFA1B4256F500AF2E88 /* Charts.xcodeproj */,
+				E5A294671B44F784002D96B7 /* Cartography.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
 		E54623EA1B40D4FD00664E0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E54623E91B40D4FD00664E0B /* Dashcast.app */,
-				E54623FE1B40D4FD00664E0B /* DashcastTests.xctest */,
+				E54623E91B40D4FD00664E0B /* SwipeQuote.app */,
+				E54623FE1B40D4FD00664E0B /* SwipeQuoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +227,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E5A294681B44F784002D96B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5A2946F1B44F784002D96B7 /* Cartography.framework */,
+				E5A294711B44F784002D96B7 /* Cartography-iOS-Tests.xctest */,
+				E5A294731B44F784002D96B7 /* Cartography.framework */,
+				E5A294751B44F784002D96B7 /* Cartography-Mac-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E94E63201296092AB1BA051C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,9 +258,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E54623E81B40D4FD00664E0B /* Dashcast */ = {
+		E54623E81B40D4FD00664E0B /* SwipeQuote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E54624081B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "Dashcast" */;
+			buildConfigurationList = E54624081B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "SwipeQuote" */;
 			buildPhases = (
 				8C5BE9E23AF8EFE5101CCD27 /* Check Pods Manifest.lock */,
 				E54623E51B40D4FD00664E0B /* Sources */,
@@ -222,15 +274,16 @@
 			);
 			dependencies = (
 				E55FED031B42574E00AF2E88 /* PBXTargetDependency */,
+				E5A294791B44F7C8002D96B7 /* PBXTargetDependency */,
 			);
-			name = Dashcast;
+			name = SwipeQuote;
 			productName = Dashcast;
-			productReference = E54623E91B40D4FD00664E0B /* Dashcast.app */;
+			productReference = E54623E91B40D4FD00664E0B /* SwipeQuote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E54623FD1B40D4FD00664E0B /* DashcastTests */ = {
+		E54623FD1B40D4FD00664E0B /* SwipeQuoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E546240B1B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "DashcastTests" */;
+			buildConfigurationList = E546240B1B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "SwipeQuoteTests" */;
 			buildPhases = (
 				E54623FA1B40D4FD00664E0B /* Sources */,
 				E54623FB1B40D4FD00664E0B /* Frameworks */,
@@ -241,9 +294,9 @@
 			dependencies = (
 				E54624001B40D4FD00664E0B /* PBXTargetDependency */,
 			);
-			name = DashcastTests;
+			name = SwipeQuoteTests;
 			productName = DashcastTests;
-			productReference = E54623FE1B40D4FD00664E0B /* DashcastTests.xctest */;
+			productReference = E54623FE1B40D4FD00664E0B /* SwipeQuoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +317,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E54623E41B40D4FD00664E0B /* Build configuration list for PBXProject "Dashcast" */;
+			buildConfigurationList = E54623E41B40D4FD00664E0B /* Build configuration list for PBXProject "SwipeQuote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,14 +330,18 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = E5A294681B44F784002D96B7 /* Products */;
+					ProjectRef = E5A294671B44F784002D96B7 /* Cartography.xcodeproj */;
+				},
+				{
 					ProductGroup = E55FECFB1B4256F500AF2E88 /* Products */;
 					ProjectRef = E55FECFA1B4256F500AF2E88 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				E54623E81B40D4FD00664E0B /* Dashcast */,
-				E54623FD1B40D4FD00664E0B /* DashcastTests */,
+				E54623E81B40D4FD00664E0B /* SwipeQuote */,
+				E54623FD1B40D4FD00664E0B /* SwipeQuoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +352,34 @@
 			fileType = wrapper.framework;
 			path = Charts.framework;
 			remoteRef = E55FECFE1B4256F500AF2E88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A2946F1B44F784002D96B7 /* Cartography.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cartography.framework;
+			remoteRef = E5A2946E1B44F784002D96B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A294711B44F784002D96B7 /* Cartography-iOS-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Cartography-iOS-Tests.xctest";
+			remoteRef = E5A294701B44F784002D96B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A294731B44F784002D96B7 /* Cartography.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cartography.framework;
+			remoteRef = E5A294721B44F784002D96B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5A294751B44F784002D96B7 /* Cartography-Mac-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Cartography-Mac-Tests.xctest";
+			remoteRef = E5A294741B44F784002D96B7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -398,13 +483,18 @@
 /* Begin PBXTargetDependency section */
 		E54624001B40D4FD00664E0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E54623E81B40D4FD00664E0B /* Dashcast */;
+			target = E54623E81B40D4FD00664E0B /* SwipeQuote */;
 			targetProxy = E54623FF1B40D4FD00664E0B /* PBXContainerItemProxy */;
 		};
 		E55FED031B42574E00AF2E88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = E55FED021B42574E00AF2E88 /* PBXContainerItemProxy */;
+		};
+		E5A294791B44F7C8002D96B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cartography-iOS";
+			targetProxy = E5A294781B44F7C8002D96B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,7 +607,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dashcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwipeQuote;
 				SWIFT_OBJC_BRIDGING_HEADER = "Dashcast-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -531,7 +621,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Dashcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwipeQuote;
 				SWIFT_OBJC_BRIDGING_HEADER = "Dashcast-Bridging-Header.h";
 			};
 			name = Release;
@@ -550,7 +640,7 @@
 				);
 				INFOPLIST_FILE = DashcastTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwipeQuoteTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dashcast.app/Dashcast";
 			};
 			name = Debug;
@@ -565,7 +655,7 @@
 				);
 				INFOPLIST_FILE = DashcastTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwipeQuoteTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dashcast.app/Dashcast";
 			};
 			name = Release;
@@ -573,7 +663,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E54623E41B40D4FD00664E0B /* Build configuration list for PBXProject "Dashcast" */ = {
+		E54623E41B40D4FD00664E0B /* Build configuration list for PBXProject "SwipeQuote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E54624061B40D4FD00664E0B /* Debug */,
@@ -582,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E54624081B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "Dashcast" */ = {
+		E54624081B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "SwipeQuote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E54624091B40D4FD00664E0B /* Debug */,
@@ -591,7 +681,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E546240B1B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "DashcastTests" */ = {
+		E546240B1B40D4FD00664E0B /* Build configuration list for PBXNativeTarget "SwipeQuoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E546240C1B40D4FD00664E0B /* Debug */,

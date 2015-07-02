@@ -12,9 +12,13 @@ import UIColor_FlatColors
 import Cartography
 import ReactiveUI
 import ZLSwipeableViewSwift
+import SwiftyJSON
 
 class SwipeViewController: UIViewController {
     var swipeableView: ZLSwipeableView!
+    
+    var objects = [[String: String]]()
+    
     
     var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
     
@@ -28,6 +32,27 @@ class SwipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // parse data from json
+        // http://www.hackingwithswift.com/read/7/3/parsing-json-nsdata-and-swiftyjson
+        
+        var urlString = "https://spreadsheets.google.com/feeds/list/16y6-IWK996t0ILL5YUKvHgXEISiMWNAP7HwhV4869no/od6/public/values?alt=json"
+        
+        if let url = NSURL(string: urlString) {
+            
+            if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
+                
+                let json = JSON(data: data)
+                parseJSON(json)
+            }
+            else{
+                println("something wrong of the json data")
+            }
+        }
+        else{
+            println("something wrong of the url")
+        }
+        
+        // setup swipe view
         navigationController?.setToolbarHidden(false, animated: false)
         view.backgroundColor = UIColor.whiteColor()
         view.clipsToBounds = true
@@ -52,16 +77,21 @@ class SwipeViewController: UIViewController {
         
         swipeableView.nextView = {
             if self.colorIndex < self.colors.count {
+                let diceRoll = Int(arc4random_uniform(UInt32(self.objects.count)))
                 var cardView = CardView(frame: self.swipeableView.bounds)
                 //cardView.backgroundColor =  self.colorForName(self.colors[self.colorIndex])
                 cardView.backgroundColor =  UIColor.randomFlatColor()
                 
                 //cardView.backgroundColor =  UIColor.redColor()
-                
-                cardView.textLabel.text = "Hello world"
+
+                cardView.textLabel.text = self.objects[diceRoll]["title"]
                 cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
                 
-                self.colorIndex++
+                // we don't want the card stop
+                // this will be an infinitie loop!
+                
+                //self.colorIndex++
+                
                 
                 if self.loadCardsFromXib {
                     var contentView = NSBundle.mainBundle().loadNibNamed("CardContentView", owner: self, options: nil).first! as! UIView
@@ -89,7 +119,7 @@ class SwipeViewController: UIViewController {
             return nil
         }
         
-        layout(swipeableView, view) { view1, view2 in
+        layout(swipeableView, view) { view1, view2 in            
             view1.left == view2.left+50
             view1.right == view2.right-50
             view1.top == view2.top + 120
@@ -100,5 +130,14 @@ class SwipeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func parseJSON(json: JSON) {
+        for result in json["feed"]["entry"].arrayValue {
+            let title = result["gsx$advice"]["$t"].stringValue
+            let author = result["gsx$author"]["$t"].stringValue
+            let obj = ["title": title, "author": author]
+            objects.append(obj)
+        }
     }
 }

@@ -90,3 +90,9 @@
 #define COCOAPODS_VERSION_MINOR_ZLSwipeableViewSwift 0
 #define COCOAPODS_VERSION_PATCH_ZLSwipeableViewSwift 2
 
+// performSelector-swift
+#define COCOAPODS_POD_AVAILABLE_performSelector_swift
+#define COCOAPODS_VERSION_MAJOR_performSelector_swift 0
+#define COCOAPODS_VERSION_MINOR_performSelector_swift 1
+#define COCOAPODS_VERSION_PATCH_performSelector_swift 0
+
