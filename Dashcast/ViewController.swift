@@ -15,7 +15,14 @@ class ViewController: UIViewController {
         var swipeViewController = SwipeViewController.self()
         
         self.navigationController?.pushViewController(swipeViewController, animated: true)
+        
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

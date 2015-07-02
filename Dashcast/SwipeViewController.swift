@@ -32,6 +32,9 @@ class SwipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Great Fxxking Startup Advice"
+        self.navigationItem.hidesBackButton = true
+        
         // parse data from json
         // http://www.hackingwithswift.com/read/7/3/parsing-json-nsdata-and-swiftyjson
         
