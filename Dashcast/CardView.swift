@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cartography
 
 class CardView: UIView {
     @IBOutlet var textLabel: UILabel!
@@ -39,6 +40,13 @@ class CardView: UIView {
         textLabel.numberOfLines = 0
         //textLabel.sizeToFit()
         self.addSubview(textLabel)
+        layout(textLabel, self){view1, view2 in
+            view1.left == view2.left+50
+            view1.right == view2.right-50
+            view1.top == view2.top + 120
+            view1.bottom == view2.bottom - 100
+        
+        }
     }
 
 }

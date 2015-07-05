@@ -82,11 +82,12 @@ class SwipeViewController: UIViewController {
             if self.colorIndex < self.colors.count {
                 let diceRoll = Int(arc4random_uniform(UInt32(self.objects.count)))
                 var cardView = CardView(frame: self.swipeableView.bounds)
+                
                 //cardView.backgroundColor =  self.colorForName(self.colors[self.colorIndex])
                 cardView.backgroundColor =  UIColor.randomFlatColor()
                 
                 //cardView.backgroundColor =  UIColor.redColor()
-
+                
                 cardView.textLabel.text = self.objects[diceRoll]["title"]
                 cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
                 
