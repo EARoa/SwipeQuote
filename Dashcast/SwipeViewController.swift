@@ -29,6 +29,8 @@ class SwipeViewController: UIViewController {
     
     var arrayOfInts: [Int] = []
     var currentCardIndex = 0
+    let firstActivityItem = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,7 +105,7 @@ class SwipeViewController: UIViewController {
                 var quoteTitle = self.objects[diceRoll]["title"]
                 var currentTitleId = self.arrayOfInts[self.currentCardIndex]
 
-                var firstQuoteTitle = self.objects[currentTitleId]["title"]
+                var firstQuoteTitle = self.objects[currentTitleId]["title"]!
 
                 cardView.textLabel.text = quoteTitle
                 cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
@@ -138,6 +140,9 @@ class SwipeViewController: UIViewController {
                 }
                 
                 self.swipeableView.didCancel = {view in
+                    let activityItems = [firstQuoteTitle]
+                    let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+                    self.presentViewController(activityViewController, animated: true, completion: nil)
                     println("Did cancel swiping view \(firstQuoteTitle)")
                     // setup the social view
                 }
