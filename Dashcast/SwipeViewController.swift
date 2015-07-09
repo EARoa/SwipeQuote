@@ -19,9 +19,6 @@ class SwipeViewController: UIViewController {
     
     var objects = [[String: String]]()
     
-    
-    var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
-    
     var colorIndex = 0
     var loadCardsFromXib = false
     
@@ -54,6 +51,7 @@ class SwipeViewController: UIViewController {
         else{
             println("something wrong of the url")
         }
+
         
         // setup swipe view
         navigationController?.setToolbarHidden(false, animated: false)
@@ -62,6 +60,9 @@ class SwipeViewController: UIViewController {
                 
         swipeableView = ZLSwipeableView()
         view.addSubview(swipeableView)
+        
+        
+        /*
         swipeableView.didStart = {view, location in
             println("Did start swiping view at location: \(location)")
         }
@@ -72,22 +73,23 @@ class SwipeViewController: UIViewController {
             println("Did end swiping view at location: \(location)")
         }
         swipeableView.didSwipe = {view, direction, vector in
+
             println("Did swipe view in direction: \(direction), vector: \(vector)")
         }
+
+        
         swipeableView.didCancel = {view in
             println("Did cancel swiping view")
+            // setup the social view
         }
-        
+          */   
         swipeableView.nextView = {
-            if self.colorIndex < self.colors.count {
+            if self.colorIndex < 10 {
                 let diceRoll = Int(arc4random_uniform(UInt32(self.objects.count)))
                 var cardView = CardView(frame: self.swipeableView.bounds)
-                
-                //cardView.backgroundColor =  self.colorForName(self.colors[self.colorIndex])
                 cardView.backgroundColor =  UIColor.randomFlatColor()
-                
                 //cardView.backgroundColor =  UIColor.redColor()
-                
+
                 cardView.textLabel.text = self.objects[diceRoll]["title"]
                 cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
                 
@@ -117,7 +119,9 @@ class SwipeViewController: UIViewController {
                         view1.width == cardView.bounds.width
                         view1.height == cardView.bounds.height
                     }
+
                 }
+                
                 return cardView
             }
             return nil
@@ -129,6 +133,7 @@ class SwipeViewController: UIViewController {
             view1.top == view2.top + 120
             view1.bottom == view2.bottom - 100
         }
+        
     }
     
     override func didReceiveMemoryWarning() {

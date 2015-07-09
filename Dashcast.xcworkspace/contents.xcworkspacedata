@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SwipeQuote.xcodeproj">
+      location = "group:/Users/joshchen1985/Desktop/iOS/SwipeQuote/Dashcast.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Dashcast.xcodeproj">
    </FileRef>
 </Workspace>

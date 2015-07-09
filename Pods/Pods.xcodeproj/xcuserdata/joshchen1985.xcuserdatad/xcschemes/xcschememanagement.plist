@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Dashcast-WeixinActivity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Dashcast-ZLSwipeableViewSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,52 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14673749B9C0F90011EF47FB</key>
+		<key>0875667160DE44EDB9AD5D64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E6949AD9F292E2CDC1738F3</key>
+		<key>0DCA282F771DCF359837CFB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4154420D2BA7D1826EB14983</key>
+		<key>1989EA90F01E8B86892A9B79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D4D279309FA47C049A61728</key>
+		<key>2A68AB21E78C4D54B7E9CC92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7206DC8E706A40F1014E46C9</key>
+		<key>4FA626E700F7B367854F35DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>765A3C0D999D3A12A9AE78C7</key>
+		<key>60964A1CFDA6DDA9A8FA909C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8043DA6D59232B39FEB3AD71</key>
+		<key>B118F81D8C4C7739CD684FA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A98942B5365A5B8A00997A34</key>
+		<key>C1BFDC1CC3ADF05337633C1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B611EE9B9661D5D656494C83</key>
+		<key>C426F9B82DD9170CCCEBB50D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE2F4641A989C06418297588</key>
+		<key>F290067363E4FC95D6779C6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8D9ED1E0E8B9F19721B3070</key>
 		<dict>
 			<key>primary</key>
 			<true/>

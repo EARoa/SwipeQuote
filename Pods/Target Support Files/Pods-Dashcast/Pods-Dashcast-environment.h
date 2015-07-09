@@ -84,6 +84,18 @@
 #define COCOAPODS_VERSION_MINOR_UIColor_FlatColors 0
 #define COCOAPODS_VERSION_PATCH_UIColor_FlatColors 2
 
+// WeixinActivity
+#define COCOAPODS_POD_AVAILABLE_WeixinActivity
+#define COCOAPODS_VERSION_MAJOR_WeixinActivity 1
+#define COCOAPODS_VERSION_MINOR_WeixinActivity 2
+#define COCOAPODS_VERSION_PATCH_WeixinActivity 0
+
+// WeixinActivity/Weixin
+#define COCOAPODS_POD_AVAILABLE_WeixinActivity_Weixin
+#define COCOAPODS_VERSION_MAJOR_WeixinActivity_Weixin 1
+#define COCOAPODS_VERSION_MINOR_WeixinActivity_Weixin 2
+#define COCOAPODS_VERSION_PATCH_WeixinActivity_Weixin 0
+
 // ZLSwipeableViewSwift
 #define COCOAPODS_POD_AVAILABLE_ZLSwipeableViewSwift
 #define COCOAPODS_VERSION_MAJOR_ZLSwipeableViewSwift 0
