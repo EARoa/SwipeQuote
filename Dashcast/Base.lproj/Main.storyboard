@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b7Z-Ul-bAf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b7Z-Ul-bAf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -16,12 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-KA-gMr">
-                                <rect key="frame" x="110" y="453" width="380" height="98"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="67M-cO-gzF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-KA-gMr">
+                                <rect key="frame" x="10" y="472" width="580" height="36"/>
+                                <color key="backgroundColor" red="0.5607843137254902" green="0.42745098039215684" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="don-WC-i01"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="goToSwipeViewButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xR4-CC-YGL"/>
@@ -29,6 +36,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="67M-cO-gzF" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Vzp-NW-vOg"/>
+                            <constraint firstAttribute="trailing" secondItem="67M-cO-gzF" secondAttribute="trailing" id="ZFk-Rf-OXQ"/>
+                            <constraint firstItem="67M-cO-gzF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dwL-oq-dly"/>
+                            <constraint firstAttribute="trailing" secondItem="U1n-KA-gMr" secondAttribute="trailing" constant="10" id="mHh-lR-HxH"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="67M-cO-gzF" secondAttribute="bottom" id="nSr-C4-YeJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="U1n-KA-gMr" secondAttribute="bottom" constant="92" id="xto-iL-Dn1"/>
+                            <constraint firstItem="U1n-KA-gMr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="yyI-Du-HfO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KJL-qA-QDv"/>
                 </viewController>
@@ -55,4 +71,7 @@
             <point key="canvasLocation" x="390" y="265"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchScreen" width="310" height="568"/>
+    </resources>
 </document>
