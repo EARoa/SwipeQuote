@@ -140,11 +140,11 @@ class SwipeViewController: UIViewController {
                 }
                 
                 self.swipeableView.didCancel = {view in
+                    println("Did cancel swiping view \(firstQuoteTitle)")
+                    // setup the social view
                     let activityItems = [firstQuoteTitle]
                     let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
                     self.presentViewController(activityViewController, animated: true, completion: nil)
-                    println("Did cancel swiping view \(firstQuoteTitle)")
-                    // setup the social view
                 }
                 
                 return cardView
