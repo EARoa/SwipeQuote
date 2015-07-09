@@ -27,6 +27,9 @@ class SwipeViewController: UIViewController {
         swipeableView.loadViews()
     }
     
+    var arrayOfInts: [Int] = []
+    var currentCardIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Great Fxxking Startup Advice"
@@ -61,7 +64,6 @@ class SwipeViewController: UIViewController {
         swipeableView = ZLSwipeableView()
         view.addSubview(swipeableView)
         
-        
         /*
         swipeableView.didStart = {view, location in
             println("Did start swiping view at location: \(location)")
@@ -72,25 +74,38 @@ class SwipeViewController: UIViewController {
         swipeableView.didEnd = {view, location in
             println("Did end swiping view at location: \(location)")
         }
-        swipeableView.didSwipe = {view, direction, vector in
 
+        swipeableView.didSwipe = {view, direction, vector in
             println("Did swipe view in direction: \(direction), vector: \(vector)")
         }
-
         
         swipeableView.didCancel = {view in
             println("Did cancel swiping view")
             // setup the social view
         }
-          */   
+          */
+        swipeableView.didSwipe = {view, direction, vector in
+            println("Did end swiping view at location: \(direction)")
+            self.currentCardIndex = self.currentCardIndex + 1
+        }
+        //
+        
         swipeableView.nextView = {
+
             if self.colorIndex < 10 {
+                
                 let diceRoll = Int(arc4random_uniform(UInt32(self.objects.count)))
+                self.arrayOfInts.append(diceRoll)
                 var cardView = CardView(frame: self.swipeableView.bounds)
                 cardView.backgroundColor =  UIColor.randomFlatColor()
                 //cardView.backgroundColor =  UIColor.redColor()
+                
+                var quoteTitle = self.objects[diceRoll]["title"]
+                var currentTitleId = self.arrayOfInts[self.currentCardIndex]
 
-                cardView.textLabel.text = self.objects[diceRoll]["title"]
+                var firstQuoteTitle = self.objects[currentTitleId]["title"]
+
+                cardView.textLabel.text = quoteTitle
                 cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
                 
                 // we don't want the card stop
@@ -122,6 +137,11 @@ class SwipeViewController: UIViewController {
 
                 }
                 
+                self.swipeableView.didCancel = {view in
+                    println("Did cancel swiping view \(firstQuoteTitle)")
+                    // setup the social view
+                }
+                
                 return cardView
             }
             return nil
@@ -133,7 +153,6 @@ class SwipeViewController: UIViewController {
             view1.top == view2.top + 120
             view1.bottom == view2.bottom - 100
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
