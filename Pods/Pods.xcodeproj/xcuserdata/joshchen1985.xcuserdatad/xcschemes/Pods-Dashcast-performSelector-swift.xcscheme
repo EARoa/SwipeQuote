@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A68AB21E78C4D54B7E9CC92"
+               BlueprintIdentifier = "1DE76814646C2D42A09AAB9D"
                BuildableName = "performSelector_swift.framework"
                BlueprintName = "Pods-Dashcast-performSelector-swift"
                ReferencedContainer = "container:Pods.xcodeproj">

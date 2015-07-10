@@ -55,7 +55,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'ReactiveUI.framework'
   install_framework 'SwiftyJSON.framework'
   install_framework 'UIColor_FlatColors.framework'
-  install_framework 'WeixinActivity.framework'
   install_framework 'ZLSwipeableViewSwift.framework'
   install_framework 'performSelector_swift.framework'
 fi
@@ -67,7 +66,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'ReactiveUI.framework'
   install_framework 'SwiftyJSON.framework'
   install_framework 'UIColor_FlatColors.framework'
-  install_framework 'WeixinActivity.framework'
   install_framework 'ZLSwipeableViewSwift.framework'
   install_framework 'performSelector_swift.framework'
 fi

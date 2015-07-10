@@ -1,1 +1,0 @@
-../../../WeixinActivity/WeixinActivity/Resources/WXApiObject.h

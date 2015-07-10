@@ -76,7 +76,6 @@ class SwipeViewController: UIViewController {
         swipeableView.didEnd = {view, location in
             println("Did end swiping view at location: \(location)")
         }
-
         swipeableView.didSwipe = {view, direction, vector in
             println("Did swipe view in direction: \(direction), vector: \(vector)")
         }
@@ -85,15 +84,20 @@ class SwipeViewController: UIViewController {
             println("Did cancel swiping view")
             // setup the social view
         }
-          */
-        swipeableView.didSwipe = {view, direction, vector in
-            println("Did end swiping view at location: \(direction)")
+        */
+        self.swipeableView.didSwipe = {view, direction, vector in
+            println("Did end swiping view at location: \(direction) before: \(self.currentCardIndex)")
             self.currentCardIndex = self.currentCardIndex + 1
+            println("after swipe \(self.currentCardIndex)")
         }
+
+
         //
         
         swipeableView.nextView = {
-
+            if self.arrayOfInts.count == 3 {
+                self.currentCardIndex = 1
+            }
             if self.colorIndex < 10 {
                 
                 let diceRoll = Int(arc4random_uniform(UInt32(self.objects.count)))
@@ -109,7 +113,9 @@ class SwipeViewController: UIViewController {
 
                 cardView.textLabel.text = quoteTitle
                 cardView.textLabel.textColor = UIColor(contrastingBlackOrWhiteColorOn:cardView.backgroundColor, isFlat:true)
-                
+
+                println(diceRoll)
+                println(self.currentCardIndex)
                 // we don't want the card stop
                 // this will be an infinitie loop!
                 
@@ -140,9 +146,9 @@ class SwipeViewController: UIViewController {
                 }
                 
                 self.swipeableView.didCancel = {view in
-                    println("Did cancel swiping view \(firstQuoteTitle)")
+                    //println("Did cancel swiping view \(self.currentCardIndex) \(firstQuoteTitle)")
                     // setup the social view
-                    let activityItems = [firstQuoteTitle]
+                    let activityItems = ["\(firstQuoteTitle) #greatfuckingstartupadvice"]
                     let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
                     self.presentViewController(activityViewController, animated: true, completion: nil)
                 }
