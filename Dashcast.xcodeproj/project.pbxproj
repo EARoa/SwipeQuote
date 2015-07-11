@@ -30,6 +30,8 @@
 		E553621B1B50C130004DF6E7 /* Muli-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E553620D1B50C130004DF6E7 /* Muli-LightItalic.ttf */; };
 		E553621C1B50C130004DF6E7 /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E553620E1B50C130004DF6E7 /* Muli-Regular.ttf */; };
 		E553621D1B50C130004DF6E7 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E553620F1B50C130004DF6E7 /* OFL.txt */; };
+		E55362291B50C69C004DF6E7 /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E55362271B50C69C004DF6E7 /* AlexBrush-Regular.ttf */; };
+		E553622A1B50C69C004DF6E7 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E55362281B50C69C004DF6E7 /* OFL.txt */; };
 		E55FED0D1B43A4EA00AF2E88 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55FED0B1B43A4EA00AF2E88 /* SwipeViewController.swift */; };
 		E55FED101B43A99600AF2E88 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55FED0F1B43A99600AF2E88 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -123,6 +125,8 @@
 		E553620D1B50C130004DF6E7 /* Muli-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-LightItalic.ttf"; sourceTree = "<group>"; };
 		E553620E1B50C130004DF6E7 /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Regular.ttf"; sourceTree = "<group>"; };
 		E553620F1B50C130004DF6E7 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E55362271B50C69C004DF6E7 /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		E55362281B50C69C004DF6E7 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		E55FED0B1B43A4EA00AF2E88 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		E55FED0F1B43A99600AF2E88 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +228,7 @@
 		E55361FF1B50C130004DF6E7 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E55362261B50C69C004DF6E7 /* Alex_Brush */,
 				E55362001B50C130004DF6E7 /* Merriweather */,
 				E553620A1B50C130004DF6E7 /* Muli */,
 			);
@@ -256,6 +261,15 @@
 				E553620F1B50C130004DF6E7 /* OFL.txt */,
 			);
 			path = Muli;
+			sourceTree = "<group>";
+		};
+		E55362261B50C69C004DF6E7 /* Alex_Brush */ = {
+			isa = PBXGroup;
+			children = (
+				E55362271B50C69C004DF6E7 /* AlexBrush-Regular.ttf */,
+				E55362281B50C69C004DF6E7 /* OFL.txt */,
+			);
+			path = Alex_Brush;
 			sourceTree = "<group>";
 		};
 		E94E63201296092AB1BA051C /* Frameworks */ = {
@@ -407,7 +421,9 @@
 				E54623F91B40D4FD00664E0B /* LaunchScreen.xib in Resources */,
 				E55362171B50C130004DF6E7 /* Merriweather-Regular.ttf in Resources */,
 				E553621A1B50C130004DF6E7 /* Muli-Light.ttf in Resources */,
+				E553622A1B50C69C004DF6E7 /* OFL.txt in Resources */,
 				E55362181B50C130004DF6E7 /* OFL.txt in Resources */,
+				E55362291B50C69C004DF6E7 /* AlexBrush-Regular.ttf in Resources */,
 				E55362111B50C130004DF6E7 /* Merriweather-Bold.ttf in Resources */,
 				E54623F61B40D4FD00664E0B /* Images.xcassets in Resources */,
 				E55362141B50C130004DF6E7 /* Merriweather-Italic.ttf in Resources */,
