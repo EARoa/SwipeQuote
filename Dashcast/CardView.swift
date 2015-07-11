@@ -37,6 +37,7 @@ class CardView: UIView {
         // UILabel
         textLabel = UILabel(frame: CGRectMake(10, 10, 200, 300))
         textLabel.textAlignment = NSTextAlignment.Center
+        textLabel.font = UIFont(name: "Merriweather-Bold", size: 17)
         textLabel.numberOfLines = 0
         //textLabel.sizeToFit()
         self.addSubview(textLabel)
